@@ -1,0 +1,5 @@
+comments:
+selector of text: /html/head/title/text()
+		title: /html/head/title
+		td: //td
+		urls: hxs.select('//@href').extract()

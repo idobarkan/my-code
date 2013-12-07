@@ -1,0 +1,336 @@
+<</TestSuite>> <</TestSuite>> <</TestSuite>> <</TestSuite>>
+<<TestSuite Test started on Fri Feb 08 23:45:47 2013>>
+<<TestMethod test_memory (__main__.TestAO)
+======================================================================
+ERROR: test_memory (__main__.TestAO)
+----------------------------------------------------------------------
+raw_exception=Traceback (most recent call last):
+  File "test_ao.py", line 1116, in test_memory
+    before = get_memory()
+  File "test_ao.py", line 1115, in get_memory
+    return DotNetSystem.GC.GetTotalMemory(True)/1e6 if DotNetSystem else gc.get_count()[0] #@UndefinedVariable (never tested the "else" part...)
+NameError: global name 'DotNetSystem' is not defined
+
+formatted_exception=exception_type=NameError, msg=global name 'DotNetSystem' is not defined. Stack:
+global name 'DotNetSystem' is not defined
+<</TestSuite>> <</TestSuite>> <</TestSuite>> <</TestSuite>>
+<<TestSuite Test started on Fri Feb 08 23:47:10 2013>>
+<</TestSuite>> <</TestSuite>> <</TestSuite>> <</TestSuite>>
+<<TestSuite Test started on Fri Feb 08 23:50:41 2013>>
+<<TestMethod test_exception (__main__.TestAO)
+======================================================================
+ERROR: test_exception (__main__.TestAO)
+----------------------------------------------------------------------
+raw_exception=Traceback (most recent call last):
+  File "test_ao.py", line 476, in test_exception
+    f.get()
+  File "C:\Users\ido\Dropbox\code\ao\future.py", line 194, in get
+    raise self._exc
+Exception: I'm a bad class
+
+formatted_exception=exception_type=Exception, msg=I'm a bad class. Stack:
+Traceback (most recent call last):
+  File "C:\Users\ido\Dropbox\code\ao\AO.py", line 302, in run
+    res = self.method(*self.a, **self.kw) # execute the method
+  File "test_ao.py", line 470, in bad
+    raise Exception("I'm a bad class")
+Exception: I'm a bad class
+
+<</TestSuite>> <</TestSuite>> <</TestSuite>> <</TestSuite>>
+<<TestSuite Test started on Fri Feb 08 23:53:31 2013>>
+<<TestMethod test_exception (__main__.TestAO)
+======================================================================
+ERROR: test_exception (__main__.TestAO)
+----------------------------------------------------------------------
+raw_exception=Traceback (most recent call last):
+  File "test_ao.py", line 483, in test_exception
+    f.get()
+  File "C:\Users\ido\Dropbox\code\ao\future.py", line 194, in get
+    raise self._exc
+Exception: I'm a bad class
+
+formatted_exception=exception_type=Exception, msg=I'm a bad class. Stack:
+Traceback (most recent call last):
+  File "C:\Users\ido\Dropbox\code\ao\AO.py", line 302, in run
+    res = self.method(*self.a, **self.kw) # execute the method
+  File "test_ao.py", line 472, in bad
+    raise Exception("I'm a bad class")
+Exception: I'm a bad class
+
+<</TestSuite>> <</TestSuite>> <</TestSuite>> <</TestSuite>>
+<<TestSuite Test started on Fri Feb 08 23:55:59 2013>>
+<</TestSuite>> <</TestSuite>> <</TestSuite>> <</TestSuite>>
+<<TestSuite Test started on Fri Feb 08 23:56:16 2013>>
+<<TestMethod test_exception (__main__.TestAO)
+======================================================================
+ERROR: test_exception (__main__.TestAO)
+----------------------------------------------------------------------
+raw_exception=Traceback (most recent call last):
+  File "test_ao.py", line 483, in test_exception
+    f.get()
+  File "C:\Users\ido\Dropbox\code\ao\future.py", line 194, in get
+    raise self._exc
+Exception: I'm a bad class
+
+formatted_exception=exception_type=Exception, msg=I'm a bad class. Stack:
+Traceback (most recent call last):
+  File "C:\Users\ido\Dropbox\code\ao\AO.py", line 302, in run
+    res = self.method(*self.a, **self.kw) # execute the method
+  File "test_ao.py", line 472, in bad
+    raise Exception("I'm a bad class")
+Exception: I'm a bad class
+
+<</TestSuite>> <</TestSuite>> <</TestSuite>> <</TestSuite>>
+<<TestSuite Test started on Fri Feb 08 23:57:50 2013>>
+<<TestMethod test_exception (__main__.TestAO)
+======================================================================
+ERROR: test_exception (__main__.TestAO)
+----------------------------------------------------------------------
+raw_exception=Traceback (most recent call last):
+  File "test_ao.py", line 483, in test_exception
+    f.get()
+  File "C:\Users\ido\Dropbox\code\ao\future.py", line 194, in get
+    raise self._exc
+Exception: I'm a bad class
+
+formatted_exception=exception_type=Exception, msg=I'm a bad class. Stack:
+Traceback (most recent call last):
+  File "C:\Users\ido\Dropbox\code\ao\AO.py", line 302, in run
+    res = self.method(*self.a, **self.kw) # execute the method
+  File "test_ao.py", line 472, in bad
+    raise Exception("I'm a bad class")
+Exception: I'm a bad class
+
+<</TestSuite>> <</TestSuite>> <</TestSuite>> <</TestSuite>>
+<<TestSuite Test started on Fri Feb 08 23:59:04 2013>>
+<<TestMethod test_exception (__main__.TestAO)
+======================================================================
+ERROR: test_exception (__main__.TestAO)
+----------------------------------------------------------------------
+raw_exception=Traceback (most recent call last):
+  File "test_ao.py", line 483, in test_exception
+    f.get()
+  File "C:\Users\ido\Dropbox\code\ao\future.py", line 194, in get
+    raise self._exc
+Exception: I'm a bad class
+
+formatted_exception=exception_type=Exception, msg=I'm a bad class. Stack:
+Traceback (most recent call last):
+  File "C:\Users\ido\Dropbox\code\ao\AO.py", line 302, in run
+    res = self.method(*self.a, **self.kw) # execute the method
+  File "test_ao.py", line 472, in bad
+    raise Exception("I'm a bad class")
+Exception: I'm a bad class
+
+<</TestSuite>> <</TestSuite>> <</TestSuite>> <</TestSuite>>
+<<TestSuite Test started on Fri Feb 08 23:59:34 2013>>
+<<TestMethod test_exception (__main__.TestAO)
+======================================================================
+ERROR: test_exception (__main__.TestAO)
+----------------------------------------------------------------------
+raw_exception=Traceback (most recent call last):
+  File "test_ao.py", line 483, in test_exception
+    f.get()
+  File "C:\Users\ido\Dropbox\code\ao\future.py", line 194, in get
+    raise self._exc
+Exception: I'm a bad class
+
+formatted_exception=exception_type=Exception, msg=I'm a bad class. Stack:
+Traceback (most recent call last):
+  File "C:\Users\ido\Dropbox\code\ao\AO.py", line 302, in run
+    res = self.method(*self.a, **self.kw) # execute the method
+  File "test_ao.py", line 472, in bad
+    raise Exception("I'm a bad class")
+Exception: I'm a bad class
+
+<</TestSuite>> <</TestSuite>> <</TestSuite>> <</TestSuite>>
+<<TestSuite Test started on Sat Feb 09 00:01:37 2013>>
+<<TestMethod test_exception (__main__.TestAO)
+======================================================================
+ERROR: test_exception (__main__.TestAO)
+----------------------------------------------------------------------
+raw_exception=Traceback (most recent call last):
+  File "test_ao.py", line 483, in test_exception
+    f.get()
+  File "C:\Users\ido\Dropbox\code\ao\future.py", line 194, in get
+    raise self._exc
+Exception: I'm a bad class
+
+formatted_exception=exception_type=Exception, msg=I'm a bad class. Stack:
+Traceback (most recent call last):
+  File "C:\Users\ido\Dropbox\code\ao\AO.py", line 302, in run
+    res = self.method(*self.a, **self.kw) # execute the method
+  File "test_ao.py", line 472, in bad
+    raise Exception("I'm a bad class")
+Exception: I'm a bad class
+
+<</TestSuite>> <</TestSuite>> <</TestSuite>> <</TestSuite>>
+<<TestSuite Test started on Sat Feb 09 00:04:00 2013>>
+<<TestMethod test_exception (__main__.TestAO)
+======================================================================
+ERROR: test_exception (__main__.TestAO)
+----------------------------------------------------------------------
+raw_exception=Traceback (most recent call last):
+  File "test_ao.py", line 485, in test_exception
+    f.get()
+  File "C:\Users\ido\Dropbox\code\ao\future.py", line 194, in get
+    raise self._exc
+AttributeError: 'exceptions.Exception' object has no attribute 'trace'
+
+formatted_exception=exception_type=AttributeError, msg='exceptions.Exception' object has no attribute 'trace'. Stack:
+Traceback (most recent call last):
+  File "C:\Users\ido\Dropbox\code\ao\AO.py", line 302, in run
+    res = self.method(*self.a, **self.kw) # execute the method
+  File "test_ao.py", line 473, in bad
+    print "@@@Ido Bad.bad- e.trace={e.trace}".format(**locals())
+AttributeError: 'exceptions.Exception' object has no attribute 'trace'
+
+<</TestSuite>> <</TestSuite>> <</TestSuite>> <</TestSuite>>
+<<TestSuite Test started on Sat Feb 09 00:06:27 2013>>
+<<TestMethod test_exception (__main__.TestAO)
+======================================================================
+ERROR: test_exception (__main__.TestAO)
+----------------------------------------------------------------------
+raw_exception=Traceback (most recent call last):
+  File "test_ao.py", line 484, in test_exception
+    f.get()
+  File "C:\Users\ido\Dropbox\code\ao\future.py", line 194, in get
+    raise self._exc
+Exception: I'm a bad class
+
+formatted_exception=exception_type=Exception, msg=I'm a bad class. Stack:
+Traceback (most recent call last):
+  File "C:\Users\ido\Dropbox\code\ao\AO.py", line 303, in run
+    res = self.method(*self.a, **self.kw) # execute the method
+  File "test_ao.py", line 473, in bad
+    raise e
+Exception: I'm a bad class
+
+<</TestSuite>> <</TestSuite>> <</TestSuite>> <</TestSuite>>
+<<TestSuite Test started on Sat Feb 09 00:14:58 2013>>
+<<TestMethod test_exception (__main__.TestAO)
+======================================================================
+ERROR: test_exception (__main__.TestAO)
+----------------------------------------------------------------------
+raw_exception=Traceback (most recent call last):
+  File "test_ao.py", line 486, in test_exception
+    f.get()
+  File "C:\Users\ido\Dropbox\code\ao\future.py", line 194, in get
+    raise self._exc
+Exception: I'm a bad class
+
+formatted_exception=exception_type=Exception, msg=I'm a bad class. Stack:
+Traceback (most recent call last):
+  File "C:\Users\ido\Dropbox\code\ao\AO.py", line 369, in _step_coroutine
+    yielded = self.coroutine.send(val)
+  File "test_ao.py", line 474, in bad
+    raise e
+Exception: I'm a bad class
+
+<</TestSuite>> <</TestSuite>> <</TestSuite>> <</TestSuite>>
+<<TestSuite Test started on Sat Feb 09 00:18:36 2013>>
+<<TestMethod test_exception (__main__.TestAO)
+======================================================================
+ERROR: test_exception (__main__.TestAO)
+----------------------------------------------------------------------
+raw_exception=Traceback (most recent call last):
+  File "test_ao.py", line 486, in test_exception
+    f.get()
+  File "C:\Users\ido\Dropbox\code\ao\future.py", line 194, in get
+    raise self._exc
+Exception: I'm a bad class
+
+formatted_exception=exception_type=Exception, msg=I'm a bad class. Stack:
+Traceback (most recent call last):
+  File "C:\Users\ido\Dropbox\code\ao\AO.py", line 369, in _step_coroutine
+    yielded = self.coroutine.send(val)
+  File "test_ao.py", line 474, in bad
+    raise e
+Exception: I'm a bad class
+
+<</TestSuite>> <</TestSuite>> <</TestSuite>> <</TestSuite>>
+<<TestSuite Test started on Sat Feb 09 00:20:00 2013>>
+<<TestMethod test_exception (__main__.TestAO)
+======================================================================
+ERROR: test_exception (__main__.TestAO)
+----------------------------------------------------------------------
+raw_exception=Traceback (most recent call last):
+  File "test_ao.py", line 486, in test_exception
+    f.get()
+  File "C:\Users\ido\Dropbox\code\ao\future.py", line 194, in get
+    raise self._exc
+Exception: I'm a bad class
+
+formatted_exception=exception_type=Exception, msg=I'm a bad class. Stack:
+Traceback (most recent call last):
+  File "C:\Users\ido\Dropbox\code\ao\AO.py", line 369, in _step_coroutine
+    yielded = self.coroutine.send(val)
+  File "test_ao.py", line 474, in bad
+    raise e
+Exception: I'm a bad class
+
+<</TestSuite>> <</TestSuite>> <</TestSuite>> <</TestSuite>>
+<<TestSuite Test started on Sat Feb 09 00:21:59 2013>>
+<</TestSuite>> <</TestSuite>> <</TestSuite>> <</TestSuite>>
+<<TestSuite Test started on Sat Feb 09 00:23:51 2013>>
+<<TestMethod test_exception (__main__.TestAO)
+======================================================================
+ERROR: test_exception (__main__.TestAO)
+----------------------------------------------------------------------
+raw_exception=Traceback (most recent call last):
+  File "test_ao.py", line 486, in test_exception
+    f.get()
+  File "C:\Users\ido\Dropbox\code\ao\future.py", line 194, in get
+    raise self._exc
+Exception: I'm a bad class
+
+formatted_exception=exception_type=Exception, msg=I'm a bad class. Stack:
+Traceback (most recent call last):
+  File "C:\Users\ido\Dropbox\code\ao\AO.py", line 369, in _step_coroutine
+    yielded = self.coroutine.send(val)
+  File "test_ao.py", line 474, in bad
+    raise e
+Exception: I'm a bad class
+
+<</TestSuite>> <</TestSuite>> <</TestSuite>> <</TestSuite>>
+<<TestSuite Test started on Sat Feb 09 00:25:52 2013>>
+<<TestMethod test_exception (__main__.TestAO)
+======================================================================
+ERROR: test_exception (__main__.TestAO)
+----------------------------------------------------------------------
+raw_exception=Traceback (most recent call last):
+  File "test_ao.py", line 486, in test_exception
+    f.get()
+  File "C:\Users\ido\Dropbox\code\ao\future.py", line 194, in get
+    raise self._exc
+Exception: I'm a bad class
+
+formatted_exception=exception_type=Exception, msg=I'm a bad class. Stack:
+Traceback (most recent call last):
+  File "C:\Users\ido\Dropbox\code\ao\AO.py", line 369, in _step_coroutine
+    yielded = self.coroutine.send(val)
+  File "test_ao.py", line 474, in bad
+    raise e
+Exception: I'm a bad class
+
+<</TestSuite>> <</TestSuite>> <</TestSuite>> <</TestSuite>>
+<<TestSuite Test started on Sat Feb 09 00:34:18 2013>>
+<<TestMethod test_exception (__main__.TestAO)
+======================================================================
+ERROR: test_exception (__main__.TestAO)
+----------------------------------------------------------------------
+raw_exception=Traceback (most recent call last):
+  File "test_ao.py", line 486, in test_exception
+    f.get()
+  File "C:\Users\ido\Dropbox\code\ao\future.py", line 194, in get
+    raise self._exc
+Exception: I'm a bad class
+
+formatted_exception=exception_type=Exception, msg=I'm a bad class. Stack:
+Traceback (most recent call last):
+  File "C:\Users\ido\Dropbox\code\ao\AO.py", line 371, in _step_coroutine
+    yielded = self.coroutine.send(val)
+  File "test_ao.py", line 474, in bad
+    raise e
+Exception: I'm a bad class
+

@@ -1,0 +1,19 @@
+<<TestMethod test_exception (__main__.TestAO)
+======================================================================
+ERROR: test_exception (__main__.TestAO)
+----------------------------------------------------------------------
+raw_exception=Traceback (most recent call last):
+  File "test_ao.py", line 486, in test_exception
+    f.get()
+  File "C:\Users\ido\Dropbox\code\ao\future.py", line 194, in get
+    raise self._exc
+Exception: I'm a bad class
+
+formatted_exception=exception_type=Exception, msg=I'm a bad class. Stack:
+Traceback (most recent call last):
+  File "C:\Users\ido\Dropbox\code\ao\AO.py", line 371, in _step_coroutine
+    yielded = self.coroutine.send(val)
+  File "test_ao.py", line 474, in bad
+    raise e
+Exception: I'm a bad class
+

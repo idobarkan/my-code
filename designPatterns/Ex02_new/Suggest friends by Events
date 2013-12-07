@@ -1,0 +1,20 @@
+# from https://www.websequencediagrams.com/#
+title Suggest friends by Events
+
+User->+":FacebookBackend": GetSuggestions(eRecommendationSource, m_LoggedInUser, i_maxResults, sort function)
+":FacebookBackend"->":EventsFriendsRecommender": GetSuggestions(i_LoggedInUser, i_MaxResults, i_OrderByFunc)
+activate ":EventsFriendsRecommender"
+":EventsFriendsRecommender"->":EventsFriendsRecommender": get all user events from all user's Events
+activate ":EventsFriendsRecommender"
+deactivate ":EventsFriendsRecommender"
+note right of ":EventsFriendsRecommender": using Facebook API
+":EventsFriendsRecommender"->":EventsFriendsRecommender": sort by i_OrderByFunc
+activate ":EventsFriendsRecommender"
+deactivate ":EventsFriendsRecommender"
+":EventsFriendsRecommender"->":EventsFriendsRecommender": filter nonrelevant users
+activate ":EventsFriendsRecommender"
+deactivate ":EventsFriendsRecommender"
+
+":EventsFriendsRecommender"-->>-":FacebookBackend" : list<Users>
+
+":FacebookBackend"-->>-User : list<Users>

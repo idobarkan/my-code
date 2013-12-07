@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="WindowsAzure1" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2012-10.1.8">
+  <WebRole name="WebRole1" vmsize="Small">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="Endpoint1" endpointName="Endpoint1" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="80" />
+    </Endpoints>
+    <Imports>
+      <Import moduleName="Diagnostics" />
+      <Import moduleName="RemoteAccess" />
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="DataConnectionString" />
+      <Setting name="DataConnectionStringAzure" />
+      <Setting name="DiagnosticsConnectionString" />
+    </ConfigurationSettings>
+    <LocalResources>
+      <LocalStorage name="LocalStorage1" cleanOnRoleRecycle="true" sizeInMB="250" />
+    </LocalResources>
+  </WebRole>
+  <WorkerRole name="WorkerRole1" vmsize="Small">
+    <Imports>
+      <Import moduleName="Diagnostics" />
+      <Import moduleName="RemoteAccess" />
+      <Import moduleName="RemoteForwarder" />
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="DataConnectionString" />
+      <Setting name="DiagnosticsConnectionString" />
+      <Setting name="DataConnectionStringAzure" />
+    </ConfigurationSettings>
+    <LocalResources>
+      <LocalStorage name="LocalStorage1" cleanOnRoleRecycle="true" sizeInMB="250" />
+    </LocalResources>
+  </WorkerRole>
+</ServiceDefinition>

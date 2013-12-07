@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="unittests" tests="1" errors="0" failures="1" skip="0">
+<testcase classname="__main__.TestAO" name="__main__.TestAO.test_exception" time="0">
+<error>
+ERROR
+======================================================================
+raw_exception=Traceback (most recent call last):
+  File &quot;test_ao.py&quot;, line 486, in test_exception
+    f.get()
+  File &quot;C:\Users\ido\Dropbox\code\ao\future.py&quot;, line 194, in get
+    raise self._exc
+Exception: I&quot;m a bad class
+
+formatted_exception=exception_type=Exception, msg=I&quot;m a bad class. Stack:
+Traceback (most recent call last):
+  File &quot;C:\Users\ido\Dropbox\code\ao\AO.py&quot;, line 371, in _step_coroutine
+    yielded = self.coroutine.send(val)
+  File &quot;test_ao.py&quot;, line 474, in bad
+    raise e
+Exception: I&quot;m a bad class
+
+</error>
+</testcase>
+</testsuite>

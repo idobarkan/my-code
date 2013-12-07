@@ -1,0 +1,23 @@
+input:
+url1-> lst of words (some are urls)
+url2-> lst of words (some are urls)
+url3-> lst of words (some are urls)
+url4-> lst of words (some are urls)
+
+
+map:
+take part of the urls and produce:
+	word1-> lst of urls
+	word2-> lst of urls
+	word3-> lst of urls
+	url1-> 1
+	url2-> 1
+	url3-> 1
+	
+reduce:
+	for word, val in dct.iteritems():
+		if not is_url(word):
+			for _url in dct[word]:
+				db[word].add(_url)
+		else:
+			db[word] += 1

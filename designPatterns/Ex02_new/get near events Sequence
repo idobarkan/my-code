@@ -1,0 +1,35 @@
+# from https://www.websequencediagrams.com/#
+title Find Checkins by location
+
+User->+":GoogleMapsLocationProvider": getAllUserFriendsRecentTags(adress)
+note right of ":GoogleMapsLocationProvider": using Google MapsAPI
+":GoogleMapsLocationProvider"-->>-User: List<GoogleMapsReference>
+
+User->User: set UserAddressSuggestions
+
+note left of User
+selecting a single reference,
+various filters, and clicks "go"
+end note
+
+User->+":FacebookCheckInVicinityProvider": getAllUserFriendsRecentTags(i_LoggedUser, i_Date, i_SortBy, i_MaxCount)
+note right of ":FacebookCheckInVicinityProvider": using Facebook API
+":FacebookCheckInVicinityProvider"-->>-User: List<Checkin>
+destroy ":FacebookCheckInVicinityProvider"
+
+loop all checkins
+    User->+":GoogleMapsLocationProvider": GetLocationCoordinates(checkin.address)
+note right of ":GoogleMapsLocationProvider": usign Google Maps API
+":GoogleMapsLocationProvider"-->>-User: Coordinate
+end
+
+loop all coordinates
+    User->+":GeographicalDistanceComputer": IsNear(friendCoordinate, userDistance, userCoordinates)
+":GoogleMapsLocationProvider"-->>-User: true/false
+opt true
+    User->User: Show
+end
+
+end
+destroy ":GoogleMapsLocationProvider"
+destroy ":GeographicalDistanceComputer"

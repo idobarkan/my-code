@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="WindowsAzure1" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2012-10.1.8">
+  <Role name="WebRole1">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=barkanido;AccountKey=UXhzT3ePd18GeTxqUBo4ZoUVgCXGZCfl8gGZg9uaqmuGTAo2MDFEauV53HO0L24B0DrXB0csryYWtWDHSysqyg==" />
+      <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="barkanido" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEGFI/v7y/PaeQxCoEa/jZq4wDQYJKoZIhvcNAQEBBQAEggEAT2b8W0jf/5MuuBofJ/LN0f4rvw0QtFmF2Pg5VcKVq0GL9L7CG8KhN7lBFVz90CNgGwMBqiPPqWKx+LHVEMqNfgu4qI8HQSCC18zLJsm03bzkdrzihRCHn9Ofqu6Zun8Ls8hsxglWLn2XEF8f7PltpDPXe2LDDdjlXMsoeL5jRkiEUO7k3fOZq194ACc0fklOCfc3ZSY7H4NxXgB0n05EZSGW0ZtEMOnm9Tp4InvoClRpTiy94Jws7Xzomi8+NSXXKhPYXxtkg50pjpC3yFx03kqhCUJJTHzz6olmp7nH7bDjcQZHmF9h3ZMVPkpZNJu4UXcBnao62c2PFfVAkn+HgjAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECG7NK0N0aOm5gBCOshzugohXm8UwJgd/ARIk" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2014-04-17T23:59:59.0000000+03:00" />
+      <Setting name="DataConnectionStringAzure" value="DefaultEndpointsProtocol=https;AccountName=barkanido;AccountKey=UXhzT3ePd18GeTxqUBo4ZoUVgCXGZCfl8gGZg9uaqmuGTAo2MDFEauV53HO0L24B0DrXB0csryYWtWDHSysqyg==" />
+      <Setting name="DiagnosticsConnectionString" value="UseDevelopmentStorage=true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="098F6030A421ABE4EBC42FEB69A1595161EBBF0E" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+  <Role name="WorkerRole1">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=barkanido;AccountKey=UXhzT3ePd18GeTxqUBo4ZoUVgCXGZCfl8gGZg9uaqmuGTAo2MDFEauV53HO0L24B0DrXB0csryYWtWDHSysqyg==" />
+      <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="DiagnosticsConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="barkanido" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEGFI/v7y/PaeQxCoEa/jZq4wDQYJKoZIhvcNAQEBBQAEggEAT2b8W0jf/5MuuBofJ/LN0f4rvw0QtFmF2Pg5VcKVq0GL9L7CG8KhN7lBFVz90CNgGwMBqiPPqWKx+LHVEMqNfgu4qI8HQSCC18zLJsm03bzkdrzihRCHn9Ofqu6Zun8Ls8hsxglWLn2XEF8f7PltpDPXe2LDDdjlXMsoeL5jRkiEUO7k3fOZq194ACc0fklOCfc3ZSY7H4NxXgB0n05EZSGW0ZtEMOnm9Tp4InvoClRpTiy94Jws7Xzomi8+NSXXKhPYXxtkg50pjpC3yFx03kqhCUJJTHzz6olmp7nH7bDjcQZHmF9h3ZMVPkpZNJu4UXcBnao62c2PFfVAkn+HgjAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECG7NK0N0aOm5gBCOshzugohXm8UwJgd/ARIk" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2014-04-17T23:59:59.0000000+03:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+      <Setting name="DataConnectionStringAzure" value="DefaultEndpointsProtocol=https;AccountName=barkanido;AccountKey=UXhzT3ePd18GeTxqUBo4ZoUVgCXGZCfl8gGZg9uaqmuGTAo2MDFEauV53HO0L24B0DrXB0csryYWtWDHSysqyg==" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="098F6030A421ABE4EBC42FEB69A1595161EBBF0E" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

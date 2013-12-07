@@ -1,0 +1,20 @@
+# from https://www.websequencediagrams.com/#
+title Suggest friends by photos
+
+User->+":FacebookBackend": GetSuggestions(eRecommendationSource, m_LoggedInUser, i_maxResults, sort function)
+":FacebookBackend"->":PhotosFriendsRecommender": GetSuggestions(i_LoggedInUser, i_MaxResults, i_OrderByFunc)
+activate ":PhotosFriendsRecommender"
+":PhotosFriendsRecommender"->":PhotosFriendsRecommender": get all user photos from all albums
+activate ":PhotosFriendsRecommender"
+deactivate ":PhotosFriendsRecommender"
+note right of ":PhotosFriendsRecommender": using Facebook API
+":PhotosFriendsRecommender"->":PhotosFriendsRecommender": sort by i_OrderByFunc
+activate ":PhotosFriendsRecommender"
+deactivate ":PhotosFriendsRecommender"
+":PhotosFriendsRecommender"->":PhotosFriendsRecommender": filter nonrelevant users
+activate ":PhotosFriendsRecommender"
+deactivate ":PhotosFriendsRecommender"
+
+":PhotosFriendsRecommender"-->>-":FacebookBackend" : list<Users>
+
+":FacebookBackend"-->>-User : list<Users>
