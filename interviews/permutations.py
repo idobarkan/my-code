@@ -17,11 +17,11 @@ def all_perms(seq, perms=None):
         perms.add(tuple(seq))
         perms.add(tuple(reversed(seq)))
     else:
-        short_perms = all_perms(seq[:-1])
+        all_but_last, last = seq[:-1], seq[-1:]
+        short_perms = all_perms(all_but_last)
         for p in short_perms:
-            merged = merge(p, seq[-1:])
-            for m in merged:
-                perms.add(m)
+            merged = merge(p, last)
+            perms |= merged
     return perms
 
 
