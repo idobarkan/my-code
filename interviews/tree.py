@@ -80,6 +80,3 @@ class TreeTraversal(unittest.TestCase):
         root = create_tree()
         self.assertEqual(post_order(root, []), ['A', 'C', 'E', 'D', 'B', 'H', 'I', 'G', 'F'])
 
-
-if __name__ == '__main__':
-    unittest.main()
